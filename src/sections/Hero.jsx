@@ -56,42 +56,43 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-row gap-4">
-            <Button
-              text="Projects"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
-            />
-           <a
-  href="https://huggingface.co/spaces/aallliiii/career-bot"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="relative group inline-flex items-center justify-center md:w-80 w-60 md:h-16 h-12 px-6 py-3 overflow-hidden font-medium text-white transition-all duration-300 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg hover:shadow-cyan-500/30"
->
-  {/* Animated background on hover */}
-  <span className="absolute top-0 right-0 inline-block w-4 h-4 mt-1 mr-1 transition-all duration-500 transform bg-white rounded-full group-hover:-mt-1 group-hover:-mr-1 group-hover:w-64 group-hover:h-64 group-hover:bg-cyan-200/20 opacity-10 group-hover:opacity-50"></span>
-  
-  {/* Button content */}
-  <span className="relative flex items-center justify-center w-full h-full gap-2">
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      width="20" 
-      height="20" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      strokeLinejoin="round"
-      className="text-white"
-    >
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-    </svg>
-    <span className="text-lg font-semibold">Chat with my AI</span>
-  </span>
-  
-  {/* Border animation */}
-  <span className="absolute bottom-0 left-0 w-full h-1 bg-white/30 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100 origin-bottom-right"></span>
-</a>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+  <Button
+    text="Projects"
+    className="md:w-80 md:h-16 w-60 h-12"
+    id="counter"
+  />
+
+  <a
+    href="https://huggingface.co/spaces/aallliiii/career-bot"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative group inline-flex items-center justify-center md:w-80 w-60 md:h-16 h-12 px-6 py-3 overflow-hidden font-medium text-white transition-all duration-300 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg hover:shadow-cyan-500/30"
+  >
+    <span className="absolute top-0 right-0 inline-block w-4 h-4 mt-1 mr-1 transition-all duration-500 transform bg-white rounded-full group-hover:-mt-1 group-hover:-mr-1 group-hover:w-64 group-hover:h-64 group-hover:bg-cyan-200/20 opacity-10 group-hover:opacity-50"></span>
+    
+    <span className="relative flex items-center justify-center w-full h-full gap-2">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="20" 
+        height="20" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+        className="text-white"
+      >
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span className="text-lg font-semibold">Chat with my AI</span>
+    </span>
+
+    <span className="absolute bottom-0 left-0 w-full h-1 bg-white/30 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100 origin-bottom-right"></span>
+  </a>
+</div>
+
             </div>
           </div>
         </header>
